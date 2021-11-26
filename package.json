@@ -11,7 +11,7 @@
     "scripts": {
         "prebuild": "rimraf dist",
         "build": "nest build",
-        "publish": "nest  build && cp -r ./package.json ./dist && cp -r ./bin ./dist",
+        "publish": "nest  build && cp -r ./package.json ./dist && cp -r ./bin ./dist && npm i ./dist -g",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "nest start",
         "start:dev": "nest start --watch",
